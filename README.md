@@ -4,8 +4,8 @@ My own cli-commands
 
 ## Install
 
+Get [Marathon](https://github.com/JohnSundell/Marathon) and:
 ```
-# Get [Marathon](https://github.com/JohnSundell/Marathon)
 marathon install <path_to_swift_script> ~/.marathon_commands/<command_name>
 ```
 
