@@ -7,7 +7,9 @@ My own cli-commands
 Get [Marathon](https://github.com/JohnSundell/Marathon) and:
 
 ```
-marathon install <path_to_swift_script> ~/.marathon_commands/<command_name>
+git clone git@github.com:axl411/Commands.git
+cd Commands
+Scripts/install.sh
 ```
 
 Note that executables are installed to `~/.marathon_commands/` for easier management in the future. Please add the following code to your shell's init file (e.g.: `~/.zshrc`):
