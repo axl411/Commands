@@ -3,8 +3,11 @@ import CommandsUtil // marathon:https://github.com/axl411/CommandsUtil.git
 import SwiftShell // marathon:git@github.com:kareman/SwiftShell.git
 import Files
 
-if let xcFile = XCFile.target(in: Folder.current) {
-    let result = run(bash: "appcode \(xcFile)")
+let folder = Folder.current
+if let xcFile = XCFile.target(in: folder) {
+    let command = "appcode \(xcFile.path)"
+    print("running `\(command)`")
+    let result = run(bash: command)
     print(result.stdout)
     print(result.stderror)
 }
