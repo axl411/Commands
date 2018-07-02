@@ -4,7 +4,16 @@ My own cli-commands
 
 ## Install
 
-Get [Marathon](https://github.com/JohnSundell/Marathon) and:
+Get [Marathon](https://github.com/JohnSundell/Marathon):
+
+```
+# update mint
+mint install yonaskolb/mint
+# update Marathon
+mint install JohnSundell/Marathon
+```
+
+and
 
 ```
 git clone git@github.com:axl411/Commands.git
