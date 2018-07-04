@@ -4,7 +4,7 @@ import SwiftShell // marathon:git@github.com:kareman/SwiftShell.git
 import Files
 
 if let xcFile = XCFile.target(in: Folder.current) {
-    let result = run(bash: "open \(xcFile.path)")
+    let result = run(bash: "open -a Xcode \(xcFile.path)")
     print(result.stdout)
     print(result.stderror)
 }
