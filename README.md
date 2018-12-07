@@ -4,29 +4,16 @@ My own cli-commands
 
 ## Install
 
-Get [Marathon](https://github.com/JohnSundell/Marathon):
+cd each command package's root folder
 
 ```
-# update mint
-mint install yonaskolb/mint
-# update Marathon
-mint install JohnSundell/Marathon
+swift build -c release -Xswiftc -static-stdlib
+cd .build/release
+cp -f CommandLineTool ~/bin/SwiftPackages/commandlinetool
+cd ../..
+rm -rf .build
 ```
 
-and
+## TODO
 
-```
-git clone git@github.com:axl411/Commands.git
-cd Commands
-Scripts/install.sh
-```
-
-Note that executables are installed to `~/.marathon_commands/` for easier management in the future. Please add the following code to your shell's init file (e.g.: `~/.zshrc`):
-
-```
-# zsh & bash
-export PATH=$HOME/.marathon_commands:$PATH
-
-# fish
-set -x PATH $PATH $HOME/.marathon_commands
-```
+- Write a command that installs other commands.
