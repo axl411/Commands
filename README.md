@@ -14,6 +14,6 @@ cd ../..
 rm -rf .build
 ```
 
-## TODO
+## Uninstall
 
-- Write a command that installs other commands.
+Just remove the binaries from `~/bin/SwiftPackages/`
